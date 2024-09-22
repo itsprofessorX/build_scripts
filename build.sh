@@ -16,6 +16,6 @@ fi
 
 #build
 . build/envsetup.sh
-lunch aosp_r5x-ap2a-userdebug
+brunch r5x userdebug
 mka installclean
 mka bacon
