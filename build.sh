@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests
 
 #sync
-
+repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
 git clone https://github.com/itsprofessorX/local_manifest.git --depth 1 -b master .repo/local_manifests
 if [ -f /opt/crave/resync.sh ]; then
   /opt/crave/resync.sh
@@ -15,6 +15,6 @@ fi
 
 #build
 . build/envsetup.sh
-lunch aosp_sweet-ap2a-user
+brunch r5x
 mka installclean
 mka bacon
