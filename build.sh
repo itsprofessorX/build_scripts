@@ -15,6 +15,6 @@ fi
 
 #build
 . build/envsetup.sh
-breakfast r5x
+lunch lineage_r5x-userdebug
 mka installclean
 mka bacon
