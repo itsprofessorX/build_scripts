@@ -12,11 +12,10 @@ else
   repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 fi
 
-# Set up build environment
-export TARGET_DISABLE_EPPE=true
 
 #build
 . build/envsetup.sh
 lunch lineage_r5x-ap2a-userdebug
 mka installclean
+export TARGET_DISABLE_EPPE=true
 m evolution
