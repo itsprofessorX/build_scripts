@@ -12,6 +12,8 @@ else
   repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 fi
 
+# Set up build environment
+export TARGET_DISABLE_EPPE=true
 
 #build
 . build/envsetup.sh
