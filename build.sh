@@ -15,7 +15,6 @@ fi
 
 #build
 . build/envsetup.sh
-lunch lineage_r5x-ap2a-userdebug
+lunch lineage_r5x-userdebug
 mka installclean
-export TARGET_DISABLE_EPPE=true
 m evolution
