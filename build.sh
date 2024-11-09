@@ -16,5 +16,3 @@ fi
 #build
 . build/envsetup.sh
 goafterlife r5x
-mka installclean
-mka bacon
