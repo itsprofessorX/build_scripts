@@ -12,6 +12,8 @@ else
   repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 fi
 
+export PIXELAGE_BUILD=r5x
+
 #build
 . build/envsetup.sh
 lunch pixelage_r5x-ap4a-userdebug
