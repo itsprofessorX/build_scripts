@@ -12,7 +12,6 @@ else
   repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 fi
 
-export BUILD_BROKEN_PREBUILT_ELF_FILES=true
 export PIXELAGE_BUILD=r5x
 
 #build
